@@ -1,0 +1,15 @@
+body {
+    margin-top: 25px;
+}
+
+.form-inline {
+    padding: 10px 0 25px 0;
+}
+
+.form-inline label {
+    margin-right: 7px;
+}
+
+.form-inline .form-group {
+    margin-right: 17px;
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WWI: Casualties Data Visualization</title>
+    <meta name="description" content="WWI Casualties Data Visualization">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>WWI by the Numbers <small>An Exercise in Data Visualization</small></h1>
+        <form class="form-inline">
+          <div class="form-group">
+            <label for="display-country">Country:</label>
+            <select class="form-control" name="display-country" id="display-country">
+              <option value="all">All</option>
+              <option value="Australia">Australia</option>
+              <option value="Austria-Hungary">Austria-Hungary</option>
+              <option value="Belgium">Belgium</option>
+              <option value="Bulgaria">Bulgaria</option>
+              <option value="Canada">Canada</option>
+              <option value="The Caribbean">The Caribbean</option>
+              <option value="French Empire">French Empire</option>
+              <option value="Germany">Germany</option>
+              <option value="Great Britain">Great Britain</option>
+              <option value="Greece">Greece</option>
+              <option value="India">India</option>
+              <option value="Italy">Italy</option>
+              <option value="Japan">Japan</option>
+              <option value="Montenegro">Montenegro</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="Portugal">Portugal</option>
+              <option value="Romania">Romania</option>
+              <option value="Russia">Russia</option>
+              <option value="Serbia">Serbia</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Turkey">Turkey</option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="display-type">Display:</label>
+            <select class="form-control" name="display-type" id="display-type">
+              <option value="all">All</option>
+              <option value="Deployed">Deployed</option>
+              <option value="Killed">Killed</option>
+              <option value="Wounded">Wounded</option>
+              <option value="MIA">MIA</option>
+            </select>
+          </div>
+        </form>
+        <div class="row">
+          <div id="chart-container"></div>
+        </div>
+        <div class="row">
+          <p class="text-muted text-right">Built with <a href="http://d3js.org/">D3</a> & <a href="http://dimplejs.org/">Dimple</a> by <a href="http://jszpila.me">Jan Szpila</a></p>
+          <p class="text-muted text-right">Data provided by <a href="http://europeanhistory.about.com/cs/worldwar1/a/blww1casualties.htm">about.com</a>, which explains some goofy numbers.</p>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+    <script src="js/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="js/vendor/d3/d3.min.js"></script>
+    <script src="js/vendor/dimple/dist/dimple.latest.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "DataVis",
+  "version": "0.0.0",
+  "authors": [
+    "Jan Szpila <jszpila@gmail.com>"
+  ],
+  "description": "Data visuazliations for fun",
+  "main": "index.html",
+  "keywords": [
+    "data-visualization",
+    "d3",
+    "infographics"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/jszpila/WWIDataVis",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
