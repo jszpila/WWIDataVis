@@ -22,7 +22,6 @@
       if (country !== 'all') {
         subset = $.grep(data, function(v) {
           if (v.Country === country) {
-            console.log(country, v.Type, ': ', v.People);
             if (v.Type !== 'Deployed') {
               notOk += parseInt(v.People);
               return true;
@@ -35,13 +34,13 @@
           }
         });
 
-        console.log(total, notOk, total - notOk);
         subset.push({Country: country, Type: 'OK', People: total - notOk});
 
         plot = dimple.plot.pie;
         $type.attr('disabled','disabled');
       } else {
         subset = data;
+        $type.val('all');
         $type.removeAttr('disabled');
       }
 
